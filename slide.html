@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>picture view</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		 #img3{
+		 	width: 400;
+		 	height: 250px;
+		 	padding: 0px 5px;
+		 	/*position: absolute;
+		 	left: 10px;
+		 	top: 10px;*/
+		 }
+		 .swiper-container {
+		    width: 400px;
+		    height: 250px;
+		}  
+	</style>
+	<link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.min.css">
+	<script type="text/javascript" src="swiper-4.5.0/dist/js/swiper.min.js">
+		
+		function slidee(){
+			mySwiper.slideNext();
+			var id = setTimeout('slidee();',2000);
+		}
+	</script>
+</head>
+<body>
+		
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="img/matthew-meijer-39262-unsplash.jpg" id= "img3"></div>
+		        <div class="swiper-slide"><img src="img/jason-leung-1579973-unsplash.jpg" id="img3"></div>
+		        <div class="swiper-slide"><img src="img/luca-dalge-1415785-unsplash.jpg" id="img3"></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		    
+		    <!-- 如果需要导航按钮 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		    
+		    <!-- 如果需要滚动条 -->
+		    <div class="swiper-scrollbar"></div>
+		</div>
+<script >        
+  var mySwiper = new Swiper ('.swiper-container', {
+    //direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+     speed: 500,
+    spaceBetween: 50,
+
+     clickable :true,
+  });
+  function s(){
+ 	mySwiper.slideNext();
+ 	var timer = setTimeout('s()',5000); 	
+  }
+  		//分页器可点击
+		 mySwiper.params.pagination.clickable = true ;
+		//此外还需要重新初始化pagination
+		mySwiper.pagination.destroy()
+		mySwiper.pagination.init()
+		mySwiper.pagination.bullets.eq(0).addClass('swiper-pagination-bullet-active');
+ 	s();
+  </script>
+
+</body>
+</html>

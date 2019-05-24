@@ -1,0 +1,414 @@
+/*#back{
+		height: 4000px;
+		width: 90%;
+		margin: 0px auto;
+		background-image: url("img/robin-benzrihem-1580304-unsplash.jpg");
+	}*/
+	*{
+		/*border: 1px solid #000;*/
+	}
+	body{
+		margin-left: 0px;
+		margin-right: 0px;
+		/*图片占整个宽度*/
+	}
+	#big{
+		width: 100%;
+		height:3900px;
+		margin: 0px auto;
+		/*padding: 0px 10px;*/
+		/*border: 1px solid #000;*/
+	}
+	#totop{
+		width: 40px;
+		height: 40px;
+		position: fixed;
+		right: 10px;
+		bottom: 10px;
+		cursor: pointer;
+	}
+	#totop2{
+		width: 40px;
+		height: 40px;
+		position: fixed;
+		right: 10px;
+		bottom: 10px;
+		cursor: pointer;
+	}
+	#totop:hover{
+		display: none;
+	}
+	#totop2:hover{
+		display: block;
+	}
+	#top{
+		width:auto;
+		height: 3600px;
+	}
+	#mine{
+		position: absolute;
+	 	right: 35px;
+	 	top: 15px;
+		width: 60px;
+		height: 60px;
+		margin: 0px auto;
+		border-radius: 90px;
+		box-shadow: 1px 1px 6px #888;
+	}
+	#slide{
+		width: 100%;
+		height: 700px;
+		/*border: 5px solid #000;	*/
+	}
+	ul {
+   		list-style-type: none;
+    	margin: 0px auto;
+    	padding: 0px 0px;
+    	width: 100%;
+    	height: 50px;
+    	/*background-color: #f1f1f1;*/
+	}
+	#dh{
+		position: absolute;
+		top: 95px;
+		z-index: 10;
+		background-color: rgba(255,255,255,.5);
+		border-radius: 10px;
+	}
+	li{
+		float: left;
+	}
+	li a {
+	    display: block;
+	    text-decoration: none;
+	    text-align: center;
+	}
+	#x{
+		width: 100px;
+	    padding: 0px 10px;
+		color: #111;
+		line-height: 50px;
+		font-family: "宋体";
+		/*font-weight: 600;*/
+	}
+	/* 鼠标移动到选项上 */
+	#x:hover {
+    	/*background-color: #555;*/
+    	color: #3b5643;
+    	text-align: center;
+	}
+	hr{
+		border: 1px solid #d8dee2;
+		width: 96%;
+	}
+	#main1{
+		background-image: url("img/banter-snaps-387953-unsplash.jpg");
+		background-size: 100% 700px;
+		width: 100%;
+		height: 700px;
+		/*border: 5px solid  #0f0;*/
+	}
+	#main2{
+		background-image: url("img/lucas-alexander-15980-unsplash.jpg");
+		background-size: 100% 700px;
+		width: 100%;
+		height: 700px;
+	}
+	#main3{
+		background-image: url("img/adam-kool-11868-unsplash.jpg");
+		background-size: 100% 700px;
+		width: 100%;
+		height: 700px;
+	}
+	#wordd1{
+		position: relative;
+		width: 800px;
+		/*height: 100px;*/
+		top:50%;
+		left:50%;
+		margin-left: -440px;
+		padding-left: 120px;
+		/*border: 1px solid #000;*/
+		background: url(img/icon_txt_2.png) 0px center no-repeat;
+	}
+	#wordd2{
+		position: relative;
+		width: 800px;
+		/*height: 100px;*/
+		top:50%;
+		left:50%;
+		margin-left: -440px;
+		padding-left: 120px;
+		/*border: 1px solid #000;*/
+		background: url(img/icon_txt_1.png) 0px center no-repeat;
+	}
+	#wordd3{
+		position: relative;
+		width: 800px;
+		/*height: 100px;*/
+		top:50%;
+		left:50%;
+		margin-left: -440px;
+		padding-left: 120px;
+		/*border: 1px solid #000;*/
+		background: url(img/icon_txt_3.png) 0px center no-repeat;
+	}
+	#worddd{
+		color: #fff;
+		padding: 0;
+		margin: 0;
+		font-weight:bold;
+		font-style: italic;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+		/*line-height: 1.75;*/
+		margin-bottom: 10px;
+	}
+	#linkk{
+		width: 65%;
+		/*border: 1px solid #000;*/
+		position: relative;
+		top:55%;
+		left:25%;
+		/*margin-left: -440px;
+		margin-top: -48px;
+		padding-left: 120px;*/
+	}
+	#linkk1{
+		width: 200px;
+		/*height: */
+		color: #fff;
+		text-align: center;
+		line-height: 1.75;
+		font-style: italic;
+		text-decoration: none;
+		background-color: #0883d1;
+		/*margin-right: 50px;*/
+		margin: 0px 30px 20px;
+		padding: 10px 30px;
+		border-radius: 3px;
+		vertical-align: middle;
+	}
+	#linkk1:hover{
+		box-shadow: 2px 2px 4px rgba(0,153,255,0.5);
+		color: #fff;
+		background-color: #2c9be2;
+	}
+	#to{
+	 	display:inline;
+	 	float:left;
+	 	color: #fff;
+	  	line-height: 50px;
+	    text-align: center;
+	    padding: 0px 10px;
+	 }
+	 #button1{
+	 	height: 20px;
+	 	width: 80px;
+	 }
+	 #img1{
+	 	width: 70px;
+	 	height: 70px;
+	 	padding: 0px 5px;
+	 	position: absolute;
+	 	left: 10px;
+	 	top: 10px;
+	 }
+	 #img2{
+	 	width: 70px;
+	 	height: 70px;
+	 	padding: 0px 5px;
+	 	/*position: fixed;*/
+	 	position: absolute;
+	 	left: 10px;
+	 	top: 10px;
+	 }
+	 #img1:hover{
+	 	/*background-color: #00ff00;*/
+	 	display: block;
+	 }
+	 #img2:hover{
+	 	/*background-color: #00ff00;*/
+	 	display: none;
+	 }
+	 #img3{
+	 	width: 100%;
+	 	height: 700px;
+	 	padding: 0px 0px;
+	 	/*position: absolute;
+	 	left: 10px;
+	 	top: 10px;*/
+	 }
+	 .swiper-container {
+	    width: 100%;
+	    height: 700px;/*要与img3同步*/
+	}  
+	 .time{
+	 	float: right;
+	 	position: absolute;
+	 	right: 100px;
+	 	top: 69px;
+	 	width: 177px;
+	 	border: none;	/*#d8dee2 rgba(216,222,226,0);*/
+	 	background-color: rgba(255,255,255,0);
+	 	color: #d8dee2;
+	 }
+	 #contentt{
+	 	width: 80%;
+	 	height: 600px;
+	 	margin: 70px auto;
+	 	border: 1px solid #ddd;
+	 	border-radius: 20px;
+	 	box-shadow:15px 15px 10px #efefef ;
+	 	background-color: #fff;
+	 }
+	 #contentt1{
+	 	float: left;
+	 	width: 30%;
+	 	height: 500px;
+	 	border: 1px solid #d8dee2;
+	 	margin-top: 60px;
+	 	margin-left: 60px;
+	 	border-radius: 5px;
+	 }
+	 #contentt11{
+	 	/*clear: both;*/
+	 	margin:225px 8px;
+	 }
+	 #contentt12{
+	 	margin-top: 10px;
+	 	display: block;
+	 	text-decoration: none;
+	 	font-family: "宋体";
+	 	color: #000;
+	 }
+	 #contentt13{
+	 	margin-top: 10px;
+	 	/*letter-spacing: 2px;*/
+	 	display: block;
+	 	text-decoration: none;
+	 	font-family: "宋体";
+	 	color: #575757;
+	 }
+	 #contentt2{
+	 	margin-top: 60px;
+	 	margin-right: 60px;
+	 	float: right;
+	 	width: 50%;
+	 	height: 220px;
+	 	border: 1px solid #d8dee2;
+	 	border-radius: 5px;
+	 }
+	  #contentt21{
+	  	float: right;	
+	  	width: 45%;
+	 	margin-top: 10px;
+	 	margin-right: 5px; 
+	 	display: block;
+	 	text-decoration: none;
+	 	font-family: "宋体";
+	 	color: #000;
+	 	/*border: 1px solid #d8dee2;*/
+	 }
+	 #contentt22{
+	 	float: right;	
+	  	width: 100%;
+	 	margin-top: 10px;
+	 	margin-right: 7px; 
+	 	/*letter-spacing: 2px;*/
+	 	display: block;
+	 	text-decoration: none;
+	 	font-family: "宋体";
+	 	color: #575757;
+	 	/*border: 1px solid #d8dee2;*/
+	 }
+	  #contentt31{	
+	  	width: 57%;
+	 	margin:20px auto; 
+	 	display: block;
+	 	text-decoration: none;
+	 	font-family: "宋体";
+	 	color: #000;
+	 	/*border: 1px solid #d8dee2;*/
+	 }
+	 #contentt32{
+	  	width: 80%;
+	 	margin: 30px auto;	 
+	 	/*letter-spacing: 2px;*/
+	 	display: block;
+	 	text-decoration: none;
+	 	font-family: "宋体";
+	 	color: #575757;
+	 	/*border: 1px solid #d8dee2;*/
+	 }
+	 #cimg1{
+	 	width: 100%;
+	 	float: left;
+	 	border-radius: 5px;
+	 }
+	 #cimg2{
+	 	float: left;
+	 	height: 100%;
+	 	width: 250px;
+	 	border-radius: 4px;
+	 }
+	 #morel{
+	 	position: relative;
+	 	top:10px;
+	 	right: 	-620px;
+	 }
+	 #more{
+	 	width: 50px;
+	 	height: 50px;
+	 }
+	 #bot{
+	 	width: 100%;
+	 	height: 300px;
+	 	background-color:#efefef; 
+	 }
+	 #bot2{
+	 	float: right;
+	 	height: 300px;
+	 	width: 20px;
+	 	border: 1px solid #000;
+	 }
+	 #menu{
+	 	width: 70%;
+	 	height: 200px;
+	 	margin: 20px 50px;
+	 	/*border: 1px solid #000;*/
+	 }
+	 #menuitem{
+	 	margin: 5px 50px;
+	 	font-family:"宋体";
+	 }
+	 #menuitem1{
+	 	font-size: 22px;
+	 	color: #000;
+	 	font-family:"宋体";
+	 }
+	 #menuitem2{
+	 	margin-top: 15px; 
+	 	font-size: 18px;
+	 	color: #000;
+	 	font-family:"宋体";
+	 }
+	 #menuitem1:hover{
+	 	color: #6a8d9c;
+	 }
+	 #menuitem2:hover{
+	 	color: #6a8d9c;
+	 }
+	 #menulink{
+	 	/*margin-top: -100px;*/
+	 	position: relative;
+	 	top: 50px;
+	 }
+	 #last{
+	 	font-weight: 500;
+	 	width: 70%;
+	 	margin: 0px auto;
+	 	padding-top: -10px;
+	 	padding-left: 90px;
+	 	/*border: 1px solid #000;*/
+	 }
+

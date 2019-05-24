@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>picture view</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		#img1{
+		 	width: 70px;
+		 	height: 70px;
+		 	padding: 0px 5px;
+		 	/*position: absolute;
+		 	left: 10px;
+		 	top: 10px;*/
+		 }
+		 #img2{
+		 	width: 400;
+		 	height: 250px;
+		 	padding: 0px 5px;
+		 	/*position: absolute;
+		 	left: 10px;
+		 	top: 10px;*/
+		 }
+		 .swiper-container {
+		    width: 400px;
+		    height: 250px;
+		}  
+	</style>
+	<link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.min.css">
+	<script type="text/javascript" src="swiper-4.5.0/dist/js/swiper.min.js">
+		var arr = new Array("hello","world","123");
+		arr.push("hello");
+		arr.pop();
+		arr.reverse();
+		arr.sort();
+		document.write(arr); 
+		var mydate =  new Date();
+		document.write("<br/>"+mydate);
+		function newwindow(){
+			// window.open("2.html");
+			window.opener = null;
+			window.open('','_self');
+			window.close();
+		}
+		function doit(){
+			// alert("hello");
+			document.write("<br/>"+mydate);
+			var id=setTimeout('doit()',1000);
+		}
+		
+		var r = new String("red");
+		document.fgColor="grey";
+		document.writeln("hello");
+		function newwin(){
+			var mywin;
+			mywin = window.open("");
+			mywin.document.focus();
+			mywin.document.open();
+			mywin.document.write("hello");
+			mywin.document.clear();
+			mywin.document.close();
+		}
+		function slidee(){
+			mySwiper.slideNext();
+			var id = setTimeout('slidee();',2000);
+		}
+	</script>
+</head>
+<body onload="slidee();">
+		<button onclick="doit();">new</button>
+		<a href="https://www.baidu.com" target="_blank">baidu</a>
+		<button onclick="newwin()">新窗口</button>
+
+		<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/nature3.png" id= "img1"></div>
+        <div class="swiper-slide"><img src="img/jason-leung-1579973-unsplash.jpg" id="img2"></div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+<script >        
+  var mySwiper = new Swiper ('.swiper-container', {
+    //direction: 'vertical', // 垂直切换选项
+    loop: false, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+    //  speed: 400,
+    // spaceBetween: 100,
+  });
+
+ 
+  </script>
+</body>
+</html>
