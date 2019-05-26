@@ -10,6 +10,16 @@
 			width: 100%;
 			height: 1600px;
 		}
+		#backga{
+			background-image: url("img/bg.jpg");
+			width: 100%;
+			height: 1300px;
+		}
+		#backgp{
+			background-image: url("img/bg.jpg");
+			width: 100%;
+			height: 1250px;
+		}
 		#guide{
 			width: 100%;
 			height:50px;
@@ -51,16 +61,157 @@
 			width: 40px;
 			height: 40px;
 		}
-
+		#mine{
+			width: 50px;
+			height:50px;
+			float: right;
+			margin-right: 20px;
+		}
+/**/
+		#com{
+			width: 80%;
+			height: 450px;
+			margin-top: 160px;
+			margin-left: 130px;
+			border: 1px solid #ddd;
+		 	border-radius: 20px;
+		 	box-shadow:15px 15px 10px #efefef ;
+		 	background-color: rgba(255,255,255,0.3);
+		}
+		#coma{
+			width: 26%;
+			height: 370px;
+			margin-top: 45px;
+			margin-left: 50px;
+			border: 1px solid #ddd;
+		 	border-radius: 5px;
+		 	background-color: rgba(255,255,255,0);
+		 	float: left;
+		}
+		#comp{
+			width: 55%;
+			margin-top: 45px;
+			margin-left: 50px;
+		 	border-radius: 5px;
+		 	float: left;
+		}
+		#comp2{
+			width: 30%;
+			height: 380px;
+			margin-top: 45px;
+			margin-left: 50px;
+		 	border-radius: 5px;
+		 	float: left;
+		}
+		#morel{
+		 	position: relative;
+		 	right: 1px;
+		 	top: 5px;
+		}
+		#more{
+			width: 40px;
+			height: 40px;
+		}
+		#img1{
+		 	width: 100%;
+		 	float: left;
+		 	border-radius: 3px;
+		 }
+		 #contentt11{
+		 	/*clear: both;*/
+		 	margin:200px 10px;
+		 }
+		 #contentt12{
+		 	margin-top: 10px;
+		 	display: block;
+		 	text-decoration: none;
+		 	font-family: "宋体";
+		 	color: #000;
+		 }
+		 #contentt13{
+		 	margin-top: 10px;
+		 	/*letter-spacing: 2px;*/
+		 	display: block;
+		 	text-decoration: none;
+		 	font-family: "宋体";
+		 	color: #575757;
+		 }
+		 #atc{
+		 	width: 80%;
+		 	height:800px;
+		 	margin:0px auto;
+		 	margin-top: 100px;
+		 	border: 1px solid #efefef;
+		 	background-color: rgba(255,255,255,0.2);
+		 	box-shadow:15px 15px 10px #efefef ;
+		 }
+		 h3{
+		 	margin-top: 50px;
+		 	margin-bottom: 0px;
+		 	margin-left: 20px;
+		 }
+		 #atc1{
+		 	text-decoration: none;
+		 	font: 16px bold;
+		 	color: #51a200;
+		 	font-weight: bold;
+		 }
+		 #atc1:hover{
+		 	color: #000;
+		 }
+		 #atc2{
+		 	padding: 0px;
+		 	margin: 0px;
+		 	font: 16px bold;
+		 	color: #000;
+		 	margin-left: 20px;
+		 	text-decoration: none;
+		 }
+		 #pic{
+		 	width: 1300px;
+		 	height:650px; 
+		 	/*border: 1px solid #000;*/
+		 	margin:0px auto; 
+		 	padding-top: 100px;
+		 }
+		 #pic1{
+		 	width: 29%; 
+		 	margin-top: 80px;
+		 	margin-left: 30px;
+		 	float: left;
+		 }
+		 #pic2{
+		 	width: 33%; 
+		 	margin-top: 80px;
+		 	margin-left: 20px;
+		 	float: left;
+		 }
+		 #pic3{
+		 	width: 29%; 
+		 	margin-top: -285px;
+		 	margin-left: 30px;
+		 	float: left;
+		 }
+		 #pic4{
+		 	width: 33%; 
+		 	margin-top: 35px;
+		 	margin-left: 20px;
+		 	float: left;
+		 }
+/**/
 		#bot{
 			position: relative;
 			left: 0px;
-			top: 1300px;
+			top: 190px;
 		 	width: 100%;
 		 	height: 300px;
-		 	background-color:rgba(239,239,239,0.6); 
+		 	background-color:rgba(239,239,239,0.4); 
 		 }
-		 menu{
+		 hr{
+			border: 1px solid #d8dee2;
+			width: 96%;
+		}
+		#menu{
 		 	width: 70%;
 		 	height: 200px;
 		 	margin: 20px 50px;
@@ -99,5 +250,4 @@
 		 	margin: 0px 50px;
 		 	padding-top: 10px;
 		 	padding-left: 50px;
-		 	/*border: 1px solid #000;*/
 		 }
