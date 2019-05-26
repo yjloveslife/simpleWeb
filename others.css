@@ -1,0 +1,103 @@
+		*{
+			/*border: 1px solid #000;*/
+		}
+		body{
+			margin: 0px;
+			padding: 0px;
+		}
+		#backg{
+			background-image: url("img/bg.jpg");
+			width: 100%;
+			height: 1600px;
+		}
+		#guide{
+			width: 100%;
+			height:50px;
+			background-color: rgba(231,231,231,0.7);
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+		ul {
+	   		list-style-type: none;
+	    	margin: 0px auto;
+	    	padding: 0px 0px;
+	    	width: 100%;
+	    	height: 50px;
+		}
+		#dh{
+			z-index: 10;
+			background-color: rgba(255,255,255,.5);
+			border-radius: 10px;
+		}
+		li{
+			float: left;
+		}
+		li a {
+		    display: block;
+		    text-decoration: none;
+		    text-align: center;
+		}
+		#x{
+			width: 100px;
+		    padding: 0px 10px;
+			color: #111;
+			line-height: 50px;
+			font-family: "宋体";
+			font-size: 20px;
+		}
+		#imgsize{
+			margin:5px; 
+			width: 40px;
+			height: 40px;
+		}
+
+		#bot{
+			position: relative;
+			left: 0px;
+			top: 1300px;
+		 	width: 100%;
+		 	height: 300px;
+		 	background-color:rgba(239,239,239,0.6); 
+		 }
+		 menu{
+		 	width: 70%;
+		 	height: 200px;
+		 	margin: 20px 50px;
+		 	/*border: 1px solid #000;*/
+		 }
+		 #menuitem{
+		 	margin: 5px 50px;
+		 	font-family:"宋体";
+		 }
+		 #menuitem1{
+		 	font-size: 22px;
+		 	color: #000;
+		 	font-family:"宋体";
+		 }
+		 #menuitem2{
+		 	margin-top: 15px; 
+		 	font-size: 18px;
+		 	color: #000;
+		 	font-family:"宋体";
+		 }
+		 #menuitem1:hover{
+		 	color: #6a8d9c;
+		 }
+		 #menuitem2:hover{
+		 	color: #6a8d9c;
+		 }
+		 #menulink{
+		 	/*margin-top: -100px;*/
+		 	position: relative;
+		 	top: 50px;
+		 }
+		 #last{
+		 	float: right;
+		 	font-weight: 500;
+		 	width: 70%;
+		 	margin: 0px 50px;
+		 	padding-top: 10px;
+		 	padding-left: 50px;
+		 	/*border: 1px solid #000;*/
+		 }
