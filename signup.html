@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="sign.css">
+	<script type="text/javascript">
+		var a1=0,a2=0,a3=0;
+		function verify1(){
+			var s  = document.form.login.value;
+			if(s.length<6)
+				alert("邮箱格式有误，重新输入");
+			else
+				a1=1;
+		}
+		function verify2(){
+			var s  = document.form.password1.value;
+			if(s.length<6)
+				alert("密码太短，重新输入");
+			else
+				a2=1;
+		}
+		function verify3(){
+			var s  = document.form.password2.value;
+			if(s!=document.form.password1.value)
+				alert("密码不一致，请重新输入");
+			else
+				a3=1;
+		}
+		function verify4(){
+			if (a1==1&&a2==1&&a3==1) {
+				location.href="bigassignment.html";
+			}
+			// alert("h");
+		}
+	</script>
+</head>
+<body>
+	<div id ="big1">
+		<div id="logod"><a href="bigassignment.html"><img src="img/nature3.png" id="logo"></a>
+		</div>
+		<div id="big2signup"><!-- 450 -->
+			<div id="top1signup">
+				<div id="top1"><img src="img/wo.png" id="logo2"></div>
+				<div id="top2signup"><center style="font: 宋体 ">注册</center></div>
+			</div>
+			<hr/>
+			<form name="form">
+			<div id="form">
+				<label id="account">输入邮箱</label>
+				<input type="text" name="login" id="login_field" tabindex="2" autofocus="autofocus" autocorrect="off" autocapitalize="off" onblur="verify1()"/>
+				<label id="account">
+					密码
+				</label>
+				<input type="password" name="password1" id="login_field" tabindex="2" autofocus="autofocus" autocorrect="off" autocapitalize="off" onblur="verify2()" />
+				<label id="account">
+					确认密码
+				</label>
+				<input type="password" name="password2" id="login_field" tabindex="2" autofocus="autofocus" autocorrect="off" autocapitalize="off" onblur="verify3()"/>
+				<input type="button" name="commit" id="commit" value="确认注册" onclick="verify4()" />
+			</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
