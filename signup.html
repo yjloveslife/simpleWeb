@@ -8,7 +8,9 @@
 		var a1=0,a2=0,a3=0;
 		function verify1(){
 			var s  = document.form.login.value;
-			if(s.length<6)
+			var n =s.search("[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+") ;
+			// alert(n);
+			if(n==-1)
 				alert("邮箱格式有误，重新输入");
 			else
 				a1=1;
@@ -30,6 +32,8 @@
 		function verify4(){
 			if (a1==1&&a2==1&&a3==1) {
 				location.href="bigassignment.html";
+			}else{
+				alert("请填写信息");
 			}
 			// alert("h");
 		}
